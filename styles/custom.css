@@ -32,11 +32,16 @@
 	border-radius: 0 16px 32px 0;
     box-shadow: 1px 6px 5px 5px #1a2633;
 }
-
+.wide-image img {
+    width: 100% !important;
+}
+.width100 img{
+	width:100%
+	}
 .small-images a, .big-images a {display:inline-block}
 .small-images a.selected {border:1px solid red}
-.small-images img {height: 50px;
-    width: 68px;}
+.small-images img {
+    width: 40px;}
 #big-image img{ width:100%}
 
 

@@ -17,13 +17,65 @@ $(document).ready(function(){
 		$("body").addClass("ios7");
 		$("body").append('');
 	}
+	// Generic code for recliner option 1 recliner-op-2
+	$(".wide-image img:eq(0)").nextAll().hide();
+    $(".wide-image p:eq(0)").show();
+    $(".small-images img").click(function(e){
+        var index = $(this).index();
+        $(".wide-image img").eq(index).show().siblings().hide();
+        $(".wide-image p").eq(index).show();
+		});
+	// Generic code for recliner option 2
+	$(".recliner-op-2 img:eq(0)").nextAll().hide();
+    $(".recliner-op-2 p:eq(0)").show();
+    $(".recliner-op-2-small img").click(function(e){
+        var index = $(this).index();
+        $(".recliner-op-2 img").eq(index).show().siblings().hide();
+        $(".recliner-op-2 p").eq(index).show();
+		});
+	// Generic code for chairs option 1
+	$(".chairs-op-1 img:eq(0)").nextAll().hide();
+    $(".chairs-op-1 p:eq(0)").show();
+    $(".chairs-op-1-small img").click(function(e){
+        var index = $(this).index();
+        $(".chairs-op-1 img").eq(index).show().siblings().hide();
+        $(".chairs-op-1 p").eq(index).show();
+		});
+	// Generic code for sofas option 1
+	$(".sofas-op-1 img:eq(0)").nextAll().hide();
+    $(".sofas-op-1 p:eq(0)").show();
+    $(".sofas-op-1-small img").click(function(e){
+        var index = $(this).index();
+        $(".sofas-op-1 img").eq(index).show().siblings().hide();
+        $(".sofas-op-1 p").eq(index).show();
+		});
+	// Generic code for sofas option 2
+	$(".sofas-op-2 img:eq(0)").nextAll().hide();
+    $(".sofas-op-2 p:eq(0)").show();
+    $(".sofas-op-2-small img").click(function(e){
+        var index = $(this).index();
+        $(".sofas-op-2 img").eq(index).show().siblings().hide();
+        $(".sofas-op-2 p").eq(index).show();
+		});
+	// Generic code for sofas option 2
+	$(".sofas-op-3 img:eq(0)").nextAll().hide();
+    $(".sofas-op-3 p:eq(0)").show();
+    $(".sofas-op-3-small img").click(function(e){
+        var index = $(this).index();
+        $(".sofas-op-3 img").eq(index).show().siblings().hide();
+        $(".sofas-op-3 p").eq(index).show();
+		});
+	
 	//slide the image on clicking thumb
 	$(function(){
     $("#big-image img:eq(0)").nextAll().hide();
+    $("#big-image p:eq(0)").show();
     $(".small-images img").click(function(e){
         var index = $(this).index();
         $("#big-image img").eq(index).show().siblings().hide();
+        $("#big-image p").eq(index).show();
 		});
+	// living slider code end	
 	$(".big-image img:eq(0)").nextAll().hide();
     $(".small-images img").click(function(e){
         var index = $(this).index();
@@ -84,8 +136,8 @@ $(document).ready(function(){
 			<li><a href="#Bedroom">Bedroom</a></li>
 			<li><a href="#Kids">Kids</a></li>
 			<li><a href="#Decor">Decor</a></li>
-                    <li><a href="#New">New</a></li>
-                    <li><a href="#survey">Survey</a></li>
+            <li><a href="#New">New</a></li>
+            <li><a href="#survey">Survey</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer" data-theme="b">
@@ -102,25 +154,37 @@ $(document).ready(function(){
 	<div data-role="header" data-theme="b" >
 		<h1>living</h1>
 	</div>
-	  <p>Chairs and Sofas are essential pieces of furniture , the highlight of your living room and the perfect space for family time and conversation with friends. Sofas need stunning looks, luxurious comfort, and durability. Explore our collection of lovely designs and myriad colours in fabric sofas, leatherette sofas, wodden sofas , leather sofas, and L shaped sofas that offer all of these. Add a dash of elegance to your living room!</p>
-      <h3>Creat a look !</h3>
-	  <div data-role="content">
     
-    <div id="big-image">
-    <img src="images/chairs/7.png">
-    <img src="images/chairs/2.png">
-    <img src="images/chairs/3.png">
-    <img src="images/chairs/1.png">
-</div>
-<div class="small-images">
-    <img src="images/chairs/7.png">
-    <img src="images/chairs/2.png">
-    <img src="images/chairs/3.png">
-    <img src="images/chairs/1.png">
-</div>
+	 
+    <div data-role="content">
+     <p>Chairs and Sofas are essential pieces of furniture , the highlight of your living room and the perfect space for family time and conversation with friends. Sofas need stunning looks, luxurious comfort, and durability. Explore our collection of lovely designs and myriad colours in fabric sofas, leatherette sofas, wodden sofas , leather sofas, and L shaped sofas that offer all of these. Add a dash of elegance to your living room!</p>
+      <h3>Choose a look !</h3>
+        <div id="big-image">
+            <img src="images/chairs/7.png">
+            <img src="images/chairs/2.png">
+            <img src="images/chairs/3.png">
+            <img src="images/chairs/1.png">
+            <img src="images/chairs/4-1.png">
+            <img src="images/chairs/4-2.png">
+            <p>Black Chairs and Sofas are essential pieces of furniture</p>
+            <p>Green Chairs and Sofas are essential pieces of furniture </p>
+            <p>Whit Chairs and Sofas are essential pieces of furniture </p>
+            <p>Brown Chairs and Sofas are essential pieces of furniture </p>
+            <p>Whit with diffrent accessories </p>
+            <p>Brown with diffrent accessories </p>
+        </div>
+        <div class="small-images">
+            <img src="images/circle/black.png">
+            <img src="images/circle/green.png">
+            <img src="images/circle/white.png">
+            <img src="images/circle/7.png">
+            <img src="images/circle/15.png">
+            <img src="images/circle/1.png">
+        </div>
 
         <ul data-role="listview" data-inset="true">
-        <li><a href="#living-recliners" data-transition="flip"><img src="images/recliners/recliner.jpg" height="96" width="96" alt="Trust-Card"/>
+        <li>
+        <a href="#living-recliners" data-transition="flip"><img src="images/recliners/recliner.jpg" height="96" width="96" alt="Trust-Card"/>
           <h3>Recliners</h3>
           <p>Add chic to your décor with stylish recliners available in different colours and fabrics.</p>
           </a>
@@ -423,18 +487,37 @@ $(document).ready(function(){
     <h1>Recliners</h1>
   </div>
   <div data-role="content">
-  <div id="big-image" class="recliner-image">
-    <img src="images/recliners/10.png">
-    <img src="images/recliners/11.png">
-  
+  <div  class="wide-image">
+    <img src="images/recliners/3-1.png">
+    <img src="images/recliners/3-2.png">
+    <img src="images/recliners/3-3.png">
+       <p>Option-1 Recliners description .....</p>
+       <p>Option-2 Recliners description .....</p>
+       <p>Option-3 Recliners description .....</p>
+
     
 </div>
 <div class="small-images">
-    <img src="images/recliners/10.png">
-    <img src="images/recliners/11.png">
-   
+    <img src="images/circle/1.png">
+    <img src="images/circle/6.png">
+    <img src="images/circle/14.png">
 </div>
     <p>Add chic to your décor with stylish recliners available in different colours and fabrics. Match these with your upholstery to get a cool and elegant look for your rooms.</p>
+<div  class="recliner-op-2 width100">
+    <img src="images/recliners/10.png">
+    <img src="images/recliners/11.png">
+       <p>Option-1 Recliners description .....</p>
+       <p>Option-2 Recliners description .....</p>
+
+    
+</div>
+<div class="small-images recliner-op-2-small">
+    <img src="images/circle/14.png">
+    <img src="images/circle/12.png">
+</div>
+
+<div class="width100">
+    
     <h4>Picard Recliner <span class="small">Red</span></h4>
     <p><img src="images/recliners/Picard_Recliner___Ottoman_Crimson_Red_00_LP.jpg"/></p>
 <h4>Picard Recliner Ottoman Igneous
@@ -445,6 +528,8 @@ $(document).ready(function(){
     <span class="small">(Brown)</span>
 </h4>
     <p><img src="images/recliners/Picard_Recliner___Ottoman_Walnut_Brown_00_LP.jpg"/></p>
+
+</div>    
   </div>
   <div data-role="footer" data-theme="b">
     <h4>Dolcevita Home &copy; 2014</h4>
@@ -456,18 +541,23 @@ $(document).ready(function(){
     <h1>Chairs</h1>
   </div>
   <div data-role="content">
-  <div id="big-image" class="big-image">
-    <img src="images/chairs/4.png">
-    <img src="images/chairs/5.png">
-    <img src="images/chairs/6.png">
-    
-</div>
-<div class="small-images">
-     <img src="images/chairs/4.png">
-    <img src="images/chairs/5.png">
-    <img src="images/chairs/6.png">
-</div>
-    <p>A fabric floor level futon lounge chair that can be used in a variety of ways:</p>
+<!--------------- slider container ----------------->
+        <div  class="chairs-op-1 width100">
+            <img src="images/chairs/4.png">
+            <img src="images/chairs/5.png">
+            <img src="images/chairs/6.png">
+               <p>Option-1 chairs description .....</p>
+               <p>Option-2 chairs description .....</p>
+               <p>Option-3 chairs description .....</p>
+        </div>
+        <div class="small-images chairs-op-1-small">
+            <img src="images/circle/1.png">
+            <img src="images/circle/6.png">
+             <img src="images/circle/1.png">
+        </div>
+<!--------------- slider container End --------------->
+
+ <p>A fabric floor level futon lounge chair that can be used in a variety of ways:</p>
     <h4>Fleetwood Futon Lounger 
 <span class="small">(Brown)</span></h4>
     <p><img src="images/chairs/loung/1Fleetwood_Brown_00_IMG_0476_LP.jpg"/></p>
@@ -507,7 +597,7 @@ $(document).ready(function(){
     <h1>Sofas</h1>
   </div>
   <div data-role="content">
-  <div id="big-image" class="sofas-images">
+<!--  <div id="big-image" class="sofas-images">
     <img src="images/sofas/4.png">
     <img src="images/sofas/5.png">
     <img src="images/sofas/6.png">
@@ -518,9 +608,73 @@ $(document).ready(function(){
     <img src="images/sofas/5.png">
     <img src="images/sofas/6.png">
 </div>
-    <p>With its simple, classic design, the Apollo brings a casual grandeur to your living room</p>
-    <h4>Babylon Floor Wall Shelf Walnut</h4>
-    <p><img src="images/sofas/FNSF51AGFL1_-_category.jpg"/></p>
+--> 
+<!--------------- slider container ----------------->
+        <div  class="sofas-op-1 width100">
+            <img src="images/sofas/1-1.png">
+            <img src="images/sofas/1-2.png">
+            <img src="images/sofas/1-3.png">
+            <img src="images/sofas/1-4.png">
+            <img src="images/sofas/1-5.png">
+               <p>Option-1 sofas description .....</p>
+               <p>Option-2 sofas description .....</p>
+               <p>Option-3 sofas description .....</p>
+               <p>Option-4 sofas description .....</p>
+               <p>Option-5 sofas description .....</p>
+        </div>
+        <div class="small-images sofas-op-1-small">
+            <img src="images/circle/2.png">
+            <img src="images/circle/purple.png">
+             <img src="images/circle/navy-blue.png">
+            <img src="images/circle/5.png">
+            <img src="images/circle/10.png">
+        </div>
+<!--------------- slider container End --------------->
+   
+	<p>With its simple, classic design, the Apollo brings a casual grandeur to your living room</p>
+    <!--------------- slider container ----------------->
+        <div  class="sofas-op-2 width100">
+            <img src="images/sofas/2-1.png">
+            <img src="images/sofas/2-2.png">
+            <img src="images/sofas/2-3.png">
+            <img src="images/sofas/2-4.png">
+            
+               <p>Option-1 sofas description .....</p>
+               <p>Option-2 sofas description .....</p>
+               <p>Option-3 sofas description .....</p>
+               <p>Option-4 sofas description .....</p>
+               
+        </div>
+        <div class="small-images sofas-op-2-small">
+            <img src="images/circle/15.png">
+            <img src="images/circle/grey.png">
+            <img src="images/circle/14.png">
+            <img src="images/circle/sky-blue.png">
+           
+        </div>
+<!--------------- slider container End --------------->
+<!--------------- slider container End --------------->
+   
+	<p> simple, classic design, the Apollo brings a casual grandeur to your living room</p>
+    <!--------------- slider container ----------------->
+        <div  class="sofas-op-3 width100">
+            <img src="images/sofas/1.png">
+            <img src="images/sofas/2.png">
+            <img src="images/sofas/5.png">
+               <p>Option-1 sofas description .....</p>
+               <p>Option-2 sofas description .....</p>
+               <p>Option-3 sofas description .....</p>
+        </div>
+        <div class="small-images sofas-op-3-small">
+            <img src="images/circle/1.png">
+             <img src="images/circle/7.png">
+            <img src="images/circle/grey.png">
+           
+        </div>
+<!--------------- slider container End --------------->
+   
+	<p>With its simple, classic design, the Apollo brings a casual grandeur to your living room</p>
+
     <h4>Fleetwood Futon Lounger 
 <span class="small">(Grey)</span></h4>
     <p><img src="images/sofas/FNSF51AGMI1_-_category.jpg"/></p>

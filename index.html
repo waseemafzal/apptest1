@@ -117,41 +117,74 @@ $(document).ready(function(){
 }); 
 
 </script>
+<style>
+#success-message{
+	display:none;
+	}
+</style>
 </head> 
 <body> 
 
-<div id="page" data-role="page" data-theme="b">
-	<div data-role="header" data-theme="b">
+<div id="page" data-role="page" data-theme="a">
+	<div data-role="header" data-theme="a">
 	  <div class="logo">
-      <a class=".ui-bar-b" id="btn-panel" href="#left-panel"><img src="images/btn-panel.png" class="panel-image"  alt="open panel"/></a> 
-      <img src="images/treasure_hunt_logo.png" width="230" height="38" alt=""/>
+      <a class=".ui-bar-b" id="btn-panel" href="#left-panel"><img src="images/btn.png" class="panel-image"  alt="open panel"/></a> 
+      <img src="images/treasure_hunt_logo.png"  alt="Diamon"/>
       </div> 
       
       
 	</div>
 	<div data-role="content">	
-		<ul data-role="listview" data-theme="b">
-			<li><a href="#living">Living</a></li>
+       <ul data-role="listview" data-theme="a" data-inset="false">
+        <li>
+        <a href="#living-recliners" data-transition="flip"><img src="images/recliners/recliner.jpg" height="96" width="96" alt="Trust-Card"/>
+          <h3>Recliners</h3>
+          <p>Add chic to your décor with stylish recliners available in different colours and fabrics.</p>
+          </a>
+        </li>
+        <li><a href="#living-chairs" data-transition="flip"><img src="images/chairs/loung/Trust-Card.jpg" height="96" width="96" alt="Trust-Card"/>
+          <h3>Chairs</h3>
+          <p>A chair is a piece of furniture we take for granted.</p>
+          </a>
+        </li>
+        <li><a href="#living-storage" data-transition="flip"><img src="images/storage/Babylon_Floor_Wall_Shelf_Walnut_Finish_00_img_6691_as_smart_object-1_square_1.jpg" height="96" width="96" alt="Storage"/>
+          <h3>Storage</h3>
+          <p>BOOKSHELVES & DISPLAY UNITS</p>
+          </a>
+          </li>
+        <li><a href="#living-sofas" data-transition="pop"><img src="images/sofas/sofas.jpg" height="96" width="96" alt="sofas"/>
+          <h3>Sofas</h3>
+          <p>Sofas are essential pieces of furniture.</p>
+          </a></li>
+
+        <li><a href="#Decor" data-transition="pop"><img src="images/Decor/2.png" height="96" width="96" alt="sofas"/>
+          <h3>Decor</h3>
+          <p>Bring your style to life with home decor.</p>
+          </a></li>
+       
+      </ul>		
+	</div>
+	<div data-role="footer" data-theme="a">
+		<h4>Dolcevita home &copy; 2014</h4>
+	</div>
+       <div data-role="panel" id="left-panel" data-position="left" data-display="overlay">
+    <!-- panel content goes here -->
+    <ul data-role="listview" >
+  <img src="images/logo.png"  alt="Dolcevita"/>
+      <a href="#mypanel" data-rel="close" id="btn_panel_close" ><img src="images/icon_close.PNG"></a>        
+        <li><a href="#living">Living</a></li>
             <li><a href="#Dininng">Dininng</a></li>
 			<li><a href="#Bedroom">Bedroom</a></li>
 			<li><a href="#Kids">Kids</a></li>
 			<li><a href="#Decor">Decor</a></li>
             <li><a href="#New">New</a></li>
-            <li><a href="#survey">Survey</a></li>
-		</ul>		
-	</div>
-	<div data-role="footer" data-theme="b">
-		<h4>Dolcevita home &copy; 2014</h4>
-	</div>
-       <div data-role="panel" id="left-panel" data-position="left" data-display="overlay">
-    <!-- panel content goes here -->
-  	
-    left panel<a href="#mypanel" data-rel="close">Close panel</a>
+            <li><a href="contact.html">Contact Us</a></li>
+      </ul>
 </div>
 </div>
 
-<div id="living" data-role="page" data-theme="b" data-add-back-btn="true">
-	<div data-role="header" data-theme="b" >
+<div id="living" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" >
 		<h1>living</h1>
 	</div>
     
@@ -162,13 +195,11 @@ $(document).ready(function(){
         <div id="big-image">
             <img src="images/chairs/7.png">
             <img src="images/chairs/2.png">
-            <img src="images/chairs/3.png">
             <img src="images/chairs/1.png">
             <img src="images/chairs/4-1.png">
             <img src="images/chairs/4-2.png">
             <p>Black Chairs and Sofas are essential pieces of furniture</p>
             <p>Green Chairs and Sofas are essential pieces of furniture </p>
-            <p>Whit Chairs and Sofas are essential pieces of furniture </p>
             <p>Brown Chairs and Sofas are essential pieces of furniture </p>
             <p>Whit with diffrent accessories </p>
             <p>Brown with diffrent accessories </p>
@@ -176,8 +207,7 @@ $(document).ready(function(){
         <div class="small-images">
             <img src="images/circle/black.png">
             <img src="images/circle/green.png">
-            <img src="images/circle/white.png">
-            <img src="images/circle/7.png">
+            <img src="images/circle/6.png">
             <img src="images/circle/15.png">
             <img src="images/circle/1.png">
         </div>
@@ -206,13 +236,13 @@ $(document).ready(function(){
        
       </ul>
 	</div>
-	<div data-role="footer" data-theme="b">
+	<div data-role="footer" data-theme="a">
 		<h4>Dolcevita Home &copy; 2014</h4>
 	</div>
 </div>
 
-<div id="Dininng" data-role="page" data-theme="b" data-add-back-btn="true">
-	<div data-role="header" data-theme="b">
+<div id="Dininng" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a">
 		<h1>Dininng</h1>
 	</div>
 	<div data-role="content">	
@@ -224,76 +254,59 @@ $(document).ready(function(){
 		  <li><a href="#Dining-Danton_Folding" data-transition="flip">6 seater</a></li>
 	  </ul>
 	</div>
-	<div data-role="footer" data-theme="b">
+	<div data-role="footer" data-theme="a">
 		<h4>Dolcevita Home &copy; 2014</h4>
 	</div>
 </div>
 
-<div id="Bedroom" data-role="page" data-theme="b" data-add-back-btn="true">
-	<div data-role="header" data-theme="b">
+<div id="Bedroom" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a">
 		<h1>Bedroom</h1>
 	</div>
 	<div data-role="content">	
 		<p>Shhhhh! It's a secret... for now! The location will be announced very soon.</p>
 	</div>
-	<div data-role="footer" data-theme="b">
-	  <h4>Leisure Treasure Hunt &copy; 2014</h4>
+	<div data-role="footer" data-theme="a">
+	  <h4>Dolcevita Home &copy; 2014</h4>
 	</div>
 </div>
 
-<div data-role="page" id="Kids" data-theme="b" data-add-back-btn="true">
-	<div data-role="header" data-theme="b">
-		<h1>Kids</h1>
-	</div>
-  <div data-role="content">	
-    <p>The Leisure Treasure Hunt is held every October when the air is crisp and the treasure hunting is optimal!</p>
-      <p>Here are the details on this year's upcoming event:</p>
-        <ul>
-          <li>Saturday, October 18th and Sunday, October 19th</li>
-          <li>9am to 5pm</li>
-          <li>Entries must be submitted by midnight, October 19th</li>
-          <li>Winners will be announced Halloween, October 31st</li>
-        </ul>
-  </div>
-	<div data-role="footer" data-theme="b">
-		<h4>Leisure Treasure Hunt &copy; 2014</h4>
-	</div>
-</div>
 
-<div id="Decor" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+
+<div id="Decor" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>Decor</h1>
   </div>
   <div data-role="content">
-    <p>Because we all deserve some fun and adventure in our lives. </p>
-    <p>Because solving riddles stretches the mind and engages the spirit. </p>
-    <p>Because Leisure Treasure Hunt donates all proceeds to local charities. </p>
+    <div class="content-custum">
+    <p>The furniture and rugs in a room offer a decorating framework; flesh out the look with home decor. By adding a few decor pieces here and there, you can create a warm</p>
+    <h4>Clocks </h4>
+    <p><img  src="images/Decor/1.png"/><br>
+    Our decorative clocks are right on time and great on looks.You'll love watching the clock when it's one of our decorative wall or table timepieces.
+    </p>
+    <h4>Lamps </h4>
+    <p><img  src="images/Decor/2.png"/><br>
+    Light up the home with a little help from the lighting department at Pier 1 Imports
+    </p>
+    <h4>Clocks </h4>
+    <p><img  src="images/Decor/1.png"/><br>
+    Our decorative clocks are right on time and great on looks.You'll love watching the clock when it's one of our decorative wall or table timepieces.
+    </p>
+    <h4>Lamps </h4>
+    <p><img  src="images/Decor/2.png"/><br>
+    Light up the home with a little help from the lighting department at Pier 1 Imports
+    </p>
+    </div>
   </div>
-  <div data-role="footer" data-theme="b">
-    <h4>Leisure Treasure Hunt &copy; 2014</h4>
-  </div>
-</div>
-
-<div id="previous-hunt" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
-    <h1>Previous Hunt</h1>
-  </div>
-  <div data-role="content">
-    <p>To prepare for the Hunt, it's best to study the clues (and the treasures they lead to!) from previous games. Here's a few from last year's Hunt in Tompkins Square Park:</p>
-    <h4>Taxi! Forever...</h4>
-    <p><img src="images/taxi_hailer.jpg"/></p>
-    <h4>First Runner on Break</h4>
-    <p><img src="images/first_run_participant.JPG"/></p>
-    <h4>Ms. Charity</h4>
-    <p><img src="images/ms_charity.jpg"/></p>
-  </div>
-  <div data-role="footer" data-theme="b">
-    <h4>Leisure Treasure Hunt &copy; 2014</h4>
+  <div data-role="footer" data-theme="a">
+    <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>
 
-<div id="prizes" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+
+
+<div id="prizes" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>Prizes</h1>
   </div>
   <div class="ui-grid-a">
@@ -308,182 +321,56 @@ $(document).ready(function(){
         <li>Wisdom Pet Medicine Gift Certificate</li>
       </ul>
   </div>
-<div data-role="footer" data-theme="b">
+<div data-role="footer" data-theme="a">
     <h4>Leisure Treasure Hunt &copy; 2014</h4>
   </div>
 </div>
 
-<div id="upcoming-hunt" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
-    <h1>Upcoming Hunt</h1>
-  </div>
-  <p>Let the Hunt begin! Open your clues one at a time.</p>
-  <div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
-    <div data-role="collapsible" data-collapsed="false">
-      <h3>Clue #1</h3>
-      <p>Clue #1 Content</p>
-    </div>
-    <div data-role="collapsible" data-collapsed="true">
-      <h3>Clue #2</h3>
-      <p>Clue #2 Content</p>
-    </div>
-    <div data-role="collapsible" data-collapsed="true">
-      <h3>Clue 3</h3>
-      <p>Clue #3 Content</p>
-    </div>
-  </div>
-  <div data-role="footer" data-theme="b">
-    <h4>Leisure Treasure Hunt &copy; 2014</h4>
-  </div>
-</div>
 
-<div id="rules" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
-    <h1>Rules</h1>
-  </div>
-  <p>Rules. Not everyone's favorite, we'll admit. But still, you gotta have 'em - and here are ours:</p>
-  <ul data-role="listview" data-theme="c">
-    <li data-role="list-divider">Who can Enter</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum turpis elementum augue ornare posuere. Phasellus sit amet dolor in mi hendrerit fringilla tempor at nisi. Ut dignissim vel felis tristique tempus. Donec tempus, turpis at cursus imperdiet, enim metus scelerisque augue, nec lobortis lacus augue gravida enim. Donec faucibus est sit amet ornare volutpat. Mauris id sem pellentesque, egestas est elementum, ornare magna. </li>
-    <li data-role="list-divider">How to Play</li>
-    <li>Mauris id sem pellentesque, egestas est elementum, ornare magna. Morbi tincidunt faucibus malesuada. Morbi ac semper lacus. Sed tristique tempus diam ac viverra. Vivamus vel faucibus massa. Suspendisse porta sed ipsum eget lobortis</li>
-    <li data-role="list-divider">How Winners are Chosen</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum turpis elementum augue ornare posuere. Phasellus sit amet dolor in mi hendrerit fringilla tempor at nisi. Ut dignissim vel felis tristique tempus. </li>
-  </ul>
-  <div data-role="footer" data-theme="b">
-    <h4>Leisure Treasure Hunt &copy; 2014</h4>
-  </div>
-</div>
-
-<div id="New" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="New" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>New Arivals</h1>
   </div>
-    <p>How do I get in on all this fabulousness you ask? Just fill out our entry form below!</p>
-    <form method="post" action="" id="userForm">
-      <div data-role="fieldcontain">
-        <label for="name">Name:</label>
-        <input name="name" type="text" autofocus required id="name" value=""  />
-      </div>
-      <div data-role="fieldcontain">
-        <label for="email">Email:</label>
-        <input name="email" type="email" required id="email" value=""  />
-      </div>
-      <div data-role="fieldcontain">
-        <fieldset data-role="controlgroup">
-          <legend>Where are you from? (Check all that apply.)</legend>
-          <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_0" title="Hotel Guest" value="guest" />
-          <label for="fromCheckbox_0">Hotel Guest</label>
-          <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_1" title="Local Resident" value="local" />
-          <label for="fromCheckbox_1">Local Resident</label>
-          <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_2" title="Area Visitor" value="area-visitor" />
-          <label for="fromCheckbox_2">Area Visitor</label>
-        </fieldset>
-      </div>
-      <div data-role="fieldcontain">
-        <fieldset data-role="controlgroup" data-type="horizontal">
-          <legend>T-Shirt Size:</legend>
-          <input name="tshirtRadio" type="radio" id="tshirtRadio_0" title="Small" value="small" />
-          <label for="tshirtRadio_0">Small</label>
-          <input name="tshirtRadio" type="radio" id="tshirtRadio_1" title="Medium" value="medium" checked />
-          <label for="tshirtRadio_1">Medium</label>
-          <input name="tshirtRadio" type="radio" id="tshirtRadio_2" title="Large" value="large" />
-          <label for="tshirtRadio_2">Large</label>
-        </fieldset>
-      </div>
-      <div data-role="fieldcontain">
-        <label for="experienceSelect" class="select">Ever been on a Leisure Treasure Hunt?</label>
-        <select name="experienceSelect" id="experienceSelect">
-          <option value="" selected>Choose one...</option>
-          <option value="never">Never before!</option>
-          <option value="last-year">Last year was great!</option>
-          <option value="many">Many times!</option>
-        </select>
-      </div>
-      <div data-role="fieldcontain">
-        <label for="nextSelect" class="select">Where next?</label>
-        <select name="nextSelect" id="nextSelect" data-native-menu="false">
-          <optgroup label="North America">
-            <option value="ny">New York</option>
-            <option value="la">Los Angeles</option>
-            <option value="montreal">Montreal</option>
-            <option value="quebec">Quebec</option>
-            <option value="sf">San Francisco</option>
-          </optgroup>
-          <optgroup label="South America">
-            <option value="ba">Buonos Aires</option>
-            <option value="cancun">Cancun</option>
-            <option value="mc">Mexico City</option>
-            <option value="sp">Sao Paolo</option>
-          </optgroup>
-        </select>
-      </div>
-    </form>
-   <div data-role="footer" data-theme="b">
-    <h4>Leisure Treasure Hunt &copy; 2014</h4>
-  </div>
+   <p>Comming soon</p>
 </div>
-<div data-role="page" id="survey" data-theme="b" data-add-back-btn="true">
-<div data-role="header" data-theme="b">
-  <h1>Survey</h1>
+<div data-role="page" id="contact-us" data-theme="a" data-add-back-btn="true">
+<div data-role="header" data-theme="a">
+  <h1>Contact us</h1>
 </div>
 <div data-role="content">
-<p>Thanks for taking our survey!</p>
-<form id="surveyForm" action="">
-<div data-role="fieldcontain">
-  <label for="nameText">Name:</label>
-  <input type="text" name="nameText" id="nameText" value=""  />
-</div>
-<div data-role="fieldcontain">
-  <label for="emailSurvey">Email:</label>
-  <input type="email" name="emailSurvey" id="emailSurvey" value=""  />
-  <div data-role="fieldcontain">
-    <fieldset data-role="controlgroup">
-      <legend>Do you plan on attending?</legend>
-      <input name="attendingRadio" type="radio" id="attendingRadio_0" title="Yes" value="yes" />
-      <label for="attendingRadio_0">Yes, absolutely!</label>
-      <input name="attendingRadio" type="radio" id="attendingRadio_1" title="No" value="no" />
-      <label for="attendingRadio_1">No, I'm afraid not.</label>
-      <input name="attendingRadio" type="radio" id="attendingRadio_2" title="Not Sure" value="not-sure" />
-      <label for="attendingRadio_2">I'm not sure yet.</label>
-    </fieldset>
-  </div>
-  <div data-role="fieldcontain">
-    <fieldset data-role="controlgroup">
-      <legend>How did you hear about the hunt? (Check all that apply.)</legend>
-      <input name="hearCheckbox" type="checkbox" class="custom" id="hearCheckbox_0" title="Family" value="family" />
-      <label for="hearCheckbox_0">Family</label>
-      <input name="hearCheckbox" type="checkbox" class="custom" id="hearCheckbox_1" title="Friend" value="friend" />
-      <label for="hearCheckbox_1">Friend</label>
-      <input name="hearCheckbox" type="checkbox" class="custom" id="hearCheckbox_2" title="Ad" value="ad" />
-      <label for="hearCheckbox_2">Print Ad</label>
-      <input name="hearCheckbox" type="checkbox" class="custom" id="hearCheckbox_3" title="Web" value="web" />
-      <label for="hearCheckbox_3">Web</label>
-    </fieldset>
-  </div>
-  <div data-role="fieldcontain">
-    <label for="slider">How excited are you about the Hunt?</label>
-    <input type="range" name="slider" id="slider" value="5" min="0" max="10" />
-  </div>
-  <div data-role="fieldcontain">
-    <label for="flipswitch">May we contact you?</label>
-    <select name="flipswitch" id="flipswitch" data-role="slider">
-      <option value="yes">Yes</option>
-      <option value="no" selected>No</option>
-    </select>
-  </div>
-</div>
-<input name="submitSurvey" type="submit" id="submitSurvey" value="Submit Survey" data-icon="star" /></form>
-</div>
-<div data-role="footer" data-theme="b">
-  <h4>Leisure Treasure Hunt &copy; 2014</h4>
-</div>
-</div>
 
+<p id="success-message">Thanks for Contact Us!</p>
+<form id="surveyForm" method="post" >
+<div data-role="fieldcontain">
+  <label for="name">Name:</label>
+  <input type="text" name="name" required id="nameText"  />
+</div>
+<div data-role="fieldcontain">
+  <label for="email">Email:</label>
+  <input type="email" name="email" required id="email"  />
+</div>
+<div data-role="fieldcontain">
+  <label for="message">Message:</label>
+  <input type="text" name="message" required id="message"   />
+</div>
+<input name="submitSurvey" type="submit" id="btnSubmit" onClick="submitForm()" value="Submit" data-icon="star" /></form>
+</div>
+<div data-role="footer" data-theme="a">
+  <h4>Dolcevita Home &copy; 2014</h4>
+</div>
+</div>
+<script>
+
+	function submitForm(){
+		
+			$("#success-message").css("display", "block");//$('#surveyForm')[0].reset();
+		
+	}
+</script>
 
 <!---------living subcatagory start i.e chairs ,sofas,storage-------->
-<div id="living-recliners" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="living-recliners" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>Recliners</h1>
   </div>
   <div data-role="content">
@@ -498,8 +385,8 @@ $(document).ready(function(){
     
 </div>
 <div class="small-images">
-    <img src="images/circle/1.png">
-    <img src="images/circle/6.png">
+    <img src="images/circle/recliner3.png">
+    <img src="images/circle/recliner.png">
     <img src="images/circle/14.png">
 </div>
     <p>Add chic to your décor with stylish recliners available in different colours and fabrics. Match these with your upholstery to get a cool and elegant look for your rooms.</p>
@@ -513,7 +400,7 @@ $(document).ready(function(){
 </div>
 <div class="small-images recliner-op-2-small">
     <img src="images/circle/14.png">
-    <img src="images/circle/12.png">
+    <img src="images/circle/recliner3.png">
 </div>
 
 <div class="width100">
@@ -531,13 +418,13 @@ $(document).ready(function(){
 
 </div>    
   </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>
 
-<div id="living-chairs" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="living-chairs" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>Chairs</h1>
   </div>
   <div data-role="content">
@@ -551,9 +438,9 @@ $(document).ready(function(){
                <p>Option-3 chairs description .....</p>
         </div>
         <div class="small-images chairs-op-1-small">
-            <img src="images/circle/1.png">
-            <img src="images/circle/6.png">
-             <img src="images/circle/1.png">
+            <img src="images/circle/Chair.png">
+            <img src="images/circle/chair_2.png">
+             <img src="images/circle/chair_3.png">
         </div>
 <!--------------- slider container End --------------->
 
@@ -568,13 +455,13 @@ $(document).ready(function(){
 <span class="small">(Green)</span></h4>
     <p><img src="images/chairs/loung/3Fleetwood_00_IMG_0472_LP.jpg"/></p>
   </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>
 <!-----------------storage start---------------->
-<div id="living-storage" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="living-storage" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>Storage</h1>
   </div>
   <div data-role="content">
@@ -587,13 +474,13 @@ $(document).ready(function(){
     <h4>Bristol Bookshelf Teak</h4>
     <p><img src="images/storage/Bristol_Bookshelf_Teak_00_IMG_0417_LP.jpg"/></p>
   </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>
 <!-----------------storage start---------------->
-<div id="living-sofas" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="living-sofas" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>Sofas</h1>
   </div>
   <div data-role="content">
@@ -694,7 +581,7 @@ $(document).ready(function(){
 </div>
     
   </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>
@@ -704,27 +591,29 @@ $(document).ready(function(){
 
 <!---------Dining subcatagory start i.e chairs ,sofas,storage-------->
 <!---------Dining tables start -------->
-<div id="Dining-tables" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="Dining-tables" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>Dining tables</h1>
   </div>
   <div data-role="content">
   
     <p>Dining tables come in all shapes, sizes, and finishes. You need to find the one that's just perfect! Round dining tables can accommodate more people, while square dining tables are compact and cosy. Rectangular dining tables offer plenty of serving room and suit most spaces. Use our dining table comparator .</p>
-    <h4>Arabia Dining Table</h4>
-    <p><img src="images/dining/tables/Arabia_Dining_Table_Teak_Finish_00_IMG_9999_98-1square_b.jpg" alt="Arabia Dining Table"/></p>
-    <h4>A glass act. Lucerne 4 to 6 Expandable Dining Table</h4>
-    <p><img src="images/dining/tables/Lucerne_Extendable_Dining_Table_Black_00_Untitled-3.jpg" alt="Lucerne 4 to 6 Expandable Dining Table"/></p>
-    <h4>Lucerne 4 to 6 Expandable Dining Table</h4>
-    <p><img src="images/dining/tables/Lucerne_Extendable_Dining_Table_White_00_Untitled-3.jpg" alt="Lucerne 4 to 6 Expandable Dining Table"/></p>
+    <div class="content-custum">
+    <h4>Luxury  Dining Table</h4>
+    <p><img src="images/Decor/dining.png" alt="Arabia Dining Table"/></p>
+    <h4>Expandable Dining Table</h4>
+    <p><img src="images/Decor/dining2.png" alt="Lucerne 4 to 6 Expandable Dining Table"/></p>
+    <h4>8 seater Dining Table</h4>
+    <p><img src="images/Decor/dining3.png" alt="Lucerne 4 to 6 Expandable Dining Table"/></p>
+    </div>
    </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>
 <!---------Dining Bar start----->
-<div id="Dining-bar-cabinet" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="Dining-bar-cabinet" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1> Dining Bar cabinet</h1>
   </div>
   <div data-role="content">
@@ -739,13 +628,13 @@ $(document).ready(function(){
 <span class="small">(White)</span></h4>
     <p><img src="images/dining/bar_cabinet/Caledonia-Bar-Cabinet.jpg"/></p>
   </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>
 <!-----------------Dining-chairs start---------------->
-<div id="Dining-chairs" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="Dining-chairs" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>Dining chairs</h1>
   </div>
   <div data-role="content">
@@ -763,13 +652,13 @@ Oribi Dining Chairs - Set of 2
 <span class="small">(Teak Finish, Wheat Brown)</h4>
     <p><img src="images/dining/chairs/3Oribi_Dining_Chairs_0_IMG_8826_Teak_LPs.jpg"/></p>
   </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>
 <!-----------------Danton_Folding start---------------->
-<div id="Dining-Danton_Folding" data-role="page" data-theme="b" data-add-back-btn="true">
-  <div data-role="header" data-theme="b">
+<div id="Dining-Danton_Folding" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
     <h1>6 seater Folding Tables</h1>
   </div>
   <div data-role="content">
@@ -785,7 +674,7 @@ Oribi Dining Chairs - Set of 2
 <span class="small">(Teak Finish, Wheat grey)</span></h4>
     <p><img src="images/dining/Danton_Folding/Danton_Folding_Dining_Table_Set_WB_MH_Cmp.jpg"/></p>
    </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
   </div>
 </div>

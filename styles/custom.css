@@ -12,12 +12,16 @@
 	padding:0 0 1% 0;
 	}
 #btn_panel_close{
-float: right;
+color: #fff;
+    float: right;
+    opacity: 0.8;
     position: relative;
+    right: -20px;
+    text-decoration: none;
     top: -4px;
     width: 20px;
-    z-index: 1002;	opacity:0.8;
-		}
+    z-index: 1002;
+}
 #btn_panel_close img{
 	 height: 30px;
     width: 28px;
@@ -39,6 +43,10 @@ float: right;
 */    padding: 8px 2px 21px 19px;
    
 	}
+#btn-panel{
+	 float: left;
+    margin: 38px 0 0;
+	}	
 #btn-panel:active{
 	opacity:0.7;
 	}

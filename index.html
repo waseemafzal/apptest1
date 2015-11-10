@@ -115,7 +115,6 @@ $(document).ready(function(){
 //	});
 	//bx slider end
 }); 
-
 </script>
 <style>
 #success-message{
@@ -176,14 +175,14 @@ $(document).ready(function(){
     <!-- panel content goes here -->
     <ul data-role="listview" >
   <img src="images/logo.png"  alt="Dolcevita"/>
-      <a href="#mypanel" data-rel="close" id="btn_panel_close" ><img src="images/icon_close.PNG" alt="x"></a>        
+      <a href="#mypanel" data-rel="close" id="btn_panel_close" >X</a>        
         <li><a href="#living">Living</a></li>
             <li><a href="#Dininng">Dininng</a></li>
-			<li><a href="#Bedroom">Bedroom</a></li>
+			<!--<li><a href="#Bedroom">Bedroom</a></li>-->
 			<!--<li><a href="#Kids">Kids</a></li>-->
 			<li><a href="#Decor">Decor</a></li>
 <!--            <li><a href="#New">New</a></li>
--->            <li><a href="contact.html">Contact Us</a></li>
+-->            <li><a href="#contact-us">Contact Us</a></li>
       </ul>
 </div>
 </div>
@@ -229,11 +228,6 @@ $(document).ready(function(){
           <p>A chair is a piece of furniture we take for granted.</p>
           </a>
         </li>
-        <li><a href="#living-storage" data-transition="flip"><img src="images/storage/Babylon_Floor_Wall_Shelf_Walnut_Finish_00_img_6691_as_smart_object-1_square_1.jpg" height="96" width="96" alt="Storage"/>
-          <h3>Storage</h3>
-          <p>BOOKSHELVES & DISPLAY UNITS</p>
-          </a>
-          </li>
         <li><a href="#living-sofas" data-transition="pop"><img src="images/sofas/sofas.jpg" height="96" width="96" alt="sofas"/>
           <h3>Sofas</h3>
           <p>Solar energy now.</p>
@@ -254,8 +248,8 @@ $(document).ready(function(){
 		<p>A dining table set is the heart of your home. It's where you enjoy family meals and host friends. Where homework gets done and TT gets played... Every home deserves a unique dining table set. That's why we offer a wide range of dining table sets, from 2-3 seaters to 4 seaters , 6-seaters</p>
 	  <ul data-role="listview" data-inset="true">
 		  <li><a href="#Dining-tables" data-transition="flip">Dining  tables</a></li>
-		  <li><a href="#Dining-bar-cabinet" data-transition="flip">Bar cabinet</a></li>
-		  <li><a href="#Dining-chairs" data-transition="flip">Dining chairs</a></li>
+<!--		  <li><a href="#Dining-bar-cabinet" data-transition="flip">Bar cabinet</a></li>
+-->		  <li><a href="#Dining-chairs" data-transition="flip">Dining chairs</a></li>
 		  <li><a href="#Dining-Danton_Folding" data-transition="flip">6 seater</a></li>
 	  </ul>
 	</div>
@@ -310,34 +304,6 @@ $(document).ready(function(){
 
 
 
-<div id="prizes" data-role="page" data-theme="a" data-add-back-btn="true">
-  <div data-role="header" data-theme="a">
-    <h1>Prizes</h1>
-  </div>
-  <div class="ui-grid-a">
-      <ul class="ui-block-a">
-        <li>The Landon Hotel dinner</li>
-        <li>The Landon Hotel weekend</li>
-        <li>Explore California tour</li>
-      </ul>
-      <ul class="ui-block-b">
-        <li>Case of H+ Sports</li>
-        <li>Roux Academy Art course </li>
-        <li>Wisdom Pet Medicine Gift Certificate</li>
-      </ul>
-  </div>
-<div data-role="footer" data-theme="a">
-    <h4>Leisure Treasure Hunt &copy; 2014</h4>
-  </div>
-</div>
-
-
-<div id="New" data-role="page" data-theme="a" data-add-back-btn="true">
-  <div data-role="header" data-theme="a">
-    <h1>New Arivals</h1>
-  </div>
-   <p>Comming soon</p>
-</div>
 <div data-role="page" id="contact-us" data-theme="a" data-add-back-btn="true">
 <div data-role="header" data-theme="a">
   <h1>Contact us</h1>
@@ -348,17 +314,17 @@ $(document).ready(function(){
 <form id="surveyForm" method="post" >
 <div data-role="fieldcontain">
   <label for="name">Name:</label>
-  <input type="text" name="name" required id="nameText"  />
+  <input type="text" name="name" id="name" required id="nameText"  />
 </div>
 <div data-role="fieldcontain">
   <label for="email">Email:</label>
-  <input type="email" name="email" required id="email"  />
+  <input type="email" name="email" id="email" required   />
 </div>
 <div data-role="fieldcontain">
   <label for="message">Message:</label>
   <input type="text" name="message" required id="message"   />
 </div>
-<input name="submitSurvey" type="submit" id="btnSubmit" onClick="submitForm()" value="Submit" data-icon="star" /></form>
+<input name="submitSurvey" type="button" id="btnSubmit" onClick="submitForm()" value="Submit" data-icon="star" /></form>
 </div>
 <div data-role="footer" data-theme="a">
   <h4>Dolcevita Home &copy; 2014</h4>
@@ -367,8 +333,15 @@ $(document).ready(function(){
 <script>
 
 	function submitForm(){
-		
-			$("#success-message").css("display", "block");//$('#surveyForm')[0].reset();
+		var name,email ;
+name=	$('#name').val();
+email=	$('#email').val();
+
+			$("#success-message").css("display", "block");
+			$("#success-message").html(name + " thanks for contact us! we will reply you at : " + email);
+      $('#email').val(''); // clear inputs except buttons, setting value to blank 
+      $('#message').val(''); // clear select
+			//$('#surveyForm')[0].reset();
 		
 	}
 </script>

@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
-
+.h-logo{
+	
+	}
+.logo{
+	text-align: center;
+	}
 .content-custum p img{
 	width:100%;}
 .content-custum h4{

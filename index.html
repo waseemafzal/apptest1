@@ -11,16 +11,65 @@
 <script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
 <!--slide and fit vids-->
+<style>
+img { border: 0; }
+img.highlight {
+	 border: 0 solid #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 2px;
+	}
+.small-images img{
+	
+	}
+</style>
 <script type="text/javascript">
 $(document).ready(function(){
+	
+	
+
 	if (navigator.userAgent.match(/(iPad.*|iPhone.*|iPod.*);.*CPU.*OS 7_\d/i)) {
 		$("body").addClass("ios7");
 		$("body").append('');
 	}
-	// Generic code for recliner option 1 recliner-op-2
+		// Generic code for 6seater
+	$(".6seater img:eq(0)").nextAll().hide();
+    $(".6seater p:eq(0)").show();
+    $(".6seater-small img").click(function(e){
+        var index = $(this).index();
+        $(".6seater img").eq(index).show().siblings().hide();
+        $(".6seater p").eq(index).show();
+		});
+		// Generic code for diningChairs-op-1
+	$(".diningChairs-op-1 img:eq(0)").nextAll().hide();
+    $(".diningChairs-op-1 p:eq(0)").show();
+    $(".diningChairs-op-1-small img").click(function(e){
+        var index = $(this).index();
+        $(".diningChairs-op-1 img").eq(index).show().siblings().hide();
+        $(".diningChairs-op-1 p").eq(index).show();
+		});
+		// Generic code for diningChairs-op-1
+	$(".diningtable-op-1 img:eq(0)").nextAll().hide();
+    $(".diningtable-op-1 p:eq(0)").show();
+    $(".diningtable-op-1-small img").click(function(e){
+        var index = $(this).index();
+        $(".diningtable-op-1 img").eq(index).show().siblings().hide();
+        $(".diningtable-op-1 p").eq(index).show();
+		});
+		// Generic code for decore-op-1
+	$(".decore-op-1 img:eq(0)").nextAll().hide();
+    $(".decore-op-1 p:eq(0)").show();
+    $(".decore-op-1-small img").click(function(e){
+        var index = $(this).index();
+        $(".decore-op-1 img").eq(index).show().siblings().hide();
+        $(".decore-op-1 p").eq(index).show();
+		});
+
+	// Generic code for recliner option 1 recliner-op-2 
 	$(".wide-image img:eq(0)").nextAll().hide();
     $(".wide-image p:eq(0)").show();
     $(".small-images img").click(function(e){
+		 $('img.highlight').not(e.target).removeClass('highlight');
+    $(this).toggleClass('highlight');
         var index = $(this).index();
         $(".wide-image img").eq(index).show().siblings().hide();
         $(".wide-image p").eq(index).show();
@@ -33,6 +82,23 @@ $(document).ready(function(){
         $(".recliner-op-2 img").eq(index).show().siblings().hide();
         $(".recliner-op-2 p").eq(index).show();
 		});
+	// Generic code for recliner option 3
+	$(".recliner-op-3 img:eq(0)").nextAll().hide();
+    $(".recliner-op-3 p:eq(0)").show();
+    $(".recliner-op-3-small img").click(function(e){
+        var index = $(this).index();
+        $(".recliner-op-3 img").eq(index).show().siblings().hide();
+        $(".recliner-op-3 p").eq(index).show();
+		});
+		// Generic code for recliner option 2
+	$(".recliner-op-4 img:eq(0)").nextAll().hide();
+    $(".recliner-op-4 p:eq(0)").show();
+    $(".recliner-op-4-small img").click(function(e){
+        var index = $(this).index();
+        $(".recliner-op-4 img").eq(index).show().siblings().hide();
+        $(".recliner-op-4 p").eq(index).show();
+		});
+	
 	// Generic code for chairs option 1
 	$(".chairs-op-1 img:eq(0)").nextAll().hide();
     $(".chairs-op-1 p:eq(0)").show();
@@ -40,6 +106,22 @@ $(document).ready(function(){
         var index = $(this).index();
         $(".chairs-op-1 img").eq(index).show().siblings().hide();
         $(".chairs-op-1 p").eq(index).show();
+		});
+	// Generic code for chairs option 2
+	$(".chairs-op-2 img:eq(0)").nextAll().hide();
+    $(".chairs-op-2 p:eq(0)").show();
+    $(".chairs-op-2-small img").click(function(e){
+        var index = $(this).index();
+        $(".chairs-op-2 img").eq(index).show().siblings().hide();
+        $(".chairs-op-2 p").eq(index).show();
+		});
+	// Generic code for chairs option 3
+	$(".chairs-op-3 img:eq(0)").nextAll().hide();
+    $(".chairs-op-3 p:eq(0)").show();
+    $(".chairs-op-3-small img").click(function(e){
+        var index = $(this).index();
+        $(".chairs-op-3 img").eq(index).show().siblings().hide();
+        $(".chairs-op-3 p").eq(index).show();
 		});
 	// Generic code for sofas option 1
 	$(".sofas-op-1 img:eq(0)").nextAll().hide();
@@ -57,13 +139,21 @@ $(document).ready(function(){
         $(".sofas-op-2 img").eq(index).show().siblings().hide();
         $(".sofas-op-2 p").eq(index).show();
 		});
-	// Generic code for sofas option 2
+	// Generic code for sofas option 3
 	$(".sofas-op-3 img:eq(0)").nextAll().hide();
     $(".sofas-op-3 p:eq(0)").show();
     $(".sofas-op-3-small img").click(function(e){
         var index = $(this).index();
         $(".sofas-op-3 img").eq(index).show().siblings().hide();
         $(".sofas-op-3 p").eq(index).show();
+		});
+	// Generic code for sofas option 4
+	$(".sofas-op-4 img:eq(0)").nextAll().hide();
+    $(".sofas-op-4 p:eq(0)").show();
+    $(".sofas-op-4-small img").click(function(e){
+        var index = $(this).index();
+        $(".sofas-op-4 img").eq(index).show().siblings().hide();
+        $(".sofas-op-4 p").eq(index).show();
 		});
 	
 	//slide the image on clicking thumb
@@ -223,14 +313,14 @@ $(document).ready(function(){
           <p>Add chic to your décor with stylish recliners available in different colours and fabrics.</p>
           </a>
         </li>
-        <li><a href="#living-chairs" data-transition="flip"><img src="images/chairs/loung/Trust-Card.jpg" height="96" width="96" alt="Trust-Card"/>
+        <li><a href="#living-chairs" data-transition="flip"><img src="images/chairs/4.png" height="96" width="96" alt="Trust-Card"/>
           <h3>Chairs</h3>
           <p>A chair is a piece of furniture we take for granted.</p>
           </a>
         </li>
-        <li><a href="#living-sofas" data-transition="pop"><img src="images/sofas/sofas.jpg" height="96" width="96" alt="sofas"/>
+        <li><a href="#living-sofas" data-transition="pop"><img src="images/sofas/2-1.png" height="96" width="96" alt="sofas"/>
           <h3>Sofas</h3>
-          <p>Solar energy now.</p>
+          <p>Sofas in different colours and fabrics..</p>
           </a></li>
        
       </ul>
@@ -248,9 +338,8 @@ $(document).ready(function(){
 		<p>A dining table set is the heart of your home. It's where you enjoy family meals and host friends. Where homework gets done and TT gets played... Every home deserves a unique dining table set. That's why we offer a wide range of dining table sets, from 2-3 seaters to 4 seaters , 6-seaters</p>
 	  <ul data-role="listview" data-inset="true">
 		  <li><a href="#Dining-tables" data-transition="flip">Dining  tables</a></li>
-<!--		  <li><a href="#Dining-bar-cabinet" data-transition="flip">Bar cabinet</a></li>
--->		  <li><a href="#Dining-chairs" data-transition="flip">Dining chairs</a></li>
-		  <li><a href="#Dining-Danton_Folding" data-transition="flip">6 seater</a></li>
+	  <li><a href="#Dining-chairs" data-transition="flip">Dining chairs</a></li>
+		
 	  </ul>
 	</div>
 	<div data-role="footer" data-theme="a">
@@ -278,23 +367,18 @@ $(document).ready(function(){
   </div>
   <div data-role="content">
     <div class="content-custum">
-    <p>The furniture and rugs in a room offer a decorating framework; flesh out the look with home decor. By adding a few decor pieces here and there, you can create a warm</p>
-    <h4>Clocks </h4>
-    <p><img  src="images/Decor/1.png"/><br>
-    Our decorative clocks are right on time and great on looks.You'll love watching the clock when it's one of our decorative wall or table timepieces.
-    </p>
-    <h4>Lamps </h4>
-    <p><img  src="images/Decor/2.png"/><br>
-    Light up the home with a little help from the lighting department at Pier 1 Imports
-    </p>
-    <h4>Clocks </h4>
-    <p><img  src="images/Decor/1.png"/><br>
-    Our decorative clocks are right on time and great on looks.You'll love watching the clock when it's one of our decorative wall or table timepieces.
-    </p>
-    <h4>Lamps </h4>
-    <p><img  src="images/Decor/2.png"/><br>
-    Light up the home with a little help from the lighting department at Pier 1 Imports
-    </p>
+   <div  class="decore-op-1 width100">
+    <img src="images/img_again/lamp.jpg">
+    <img src="images/img_again/lamp_1.png">
+       <p>Option-1 Decor description .....</p>
+       <p>Option-2 Decor description .....</p>
+
+    
+</div>
+<div class="small-images decore-op-1-small">
+    <img src="images/img_again/c1.png">
+    <img src="images/img_again/c2.png">
+</div>
     </div>
   </div>
   <div data-role="footer" data-theme="a">
@@ -380,19 +464,32 @@ email=	$('#email').val();
     <img src="images/circle/14.png">
     <img src="images/circle/recliner3.png">
 </div>
-
+<p>Match these with your upholstery to get a cool and elegant look for your rooms.</p>
 <div class="width100">
+    <div  class="wide-image recliner-op-3">
+    <img src="images/img_again/recliner/recliner_1.png">
+    <img src="images/img_again/recliner/recliner_3.png">
+    <img src="images/recliners/3-3.png">
+    <p>Option-1 Recliners description .....</p>
+    <p>Option-2 Recliners description .....</p>
+    </div>
+    <div class="small-images recliner-op-3-small">
+    <img src="images/img_again/recliner/recliner_1-.png">
+    <img src="images/img_again/recliner/recliner_3-.png">
     
-    <h4>Selva Recliner </h4>
-    <p><img src="images/bootom/Recliner/recliner.png"/></p>
-<h4>Fairmont Recliner
-   
-</h4>
-    <p><img src="images/bootom/Recliner/recliner_1.png"/></p>
-<h4>The New Yorker   Recliner  
-</h4>
-    <p><img src="images/bootom/Recliner/recliner_2.png"/></p>
-
+    </div>
+    <p>Recliners available in different colours and fabrics. Match these with your upholstery to get a cool and elegant look for your rooms.</p>
+      <div  class="wide-image recliner-op-4">
+        <img src="images/img_again/recliner/recliner_2.png">
+        <img src="images/img_again/recliner/recliner_4.png">
+        <img src="images/recliners/3-3.png">
+           <p>Option-1 Recliners description .....</p>
+           <p>Option-2 Recliners description .....</p>
+    </div>
+    <div class="small-images recliner-op-4-small">
+        <img src="images/img_again/recliner/recliner_2-.png">
+        <img src="images/img_again/recliner/recliner_4-.png">
+    </div>
 </div>    
   </div>
   <div data-role="footer" data-theme="a">
@@ -420,16 +517,34 @@ email=	$('#email').val();
              <img src="images/circle/chair_3.png">
         </div>
 <!--------------- slider container End --------------->
-<div class="wide-image">
+<!--------------- slider container op 2 ----------------->
+        <div  class="chairs-op-2 width100">
+            
+            <img src="images/img_again/chair/Chair_2.png">
+            <img src="images/img_again/chair/Chair_3.png">
+               <p>Option-1 chairs description .....</p>
+               <p>Option-2 chairs description .....</p>
+               
+        </div>
+        <div class="small-images chairs-op-2-small">
+            <img src="images/img_again/chair/Chair_2-.png">
+             <img src="images/img_again/chair/Chair_3-.png">
+        </div>
+<!--------------- slider container End --------------->
+<!--------------- slider container op 2 ----------------->
+        <div  class="chairs-op-3 width100">
+           
+            <img src="images/img_again/chair/chair.png">
+            <img src="images/img_again/chair/chair_4.png">
+               <p>Option-1 chairs description .....</p>
+               <p>Option-2 chairs description .....</p>
+        </div>
+        <div class="small-images chairs-op-3-small">
+            <img src="images/img_again/chair/chair-.png">
+            <img src="images/img_again/chair/chair_4-.png">
+        </div>
+<!--------------- slider container End --------------->
 
- <p> The Le classique </p>
-    <h4></h4>
-    <p><img src="images/bootom/Chair/chair.png"/></p>
-    <h4>The Wave </h4>
-    <p><img src="images/bootom/Chair/Chair_1.png"/></p>
-    <h4>The Octo  </h4>
-    <p><img src="images/bootom/Chair/Chair_2.png"/></p>
-</div>
   </div>
   <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
@@ -538,12 +653,18 @@ email=	$('#email').val();
    
 	<p>With its simple, classic design, the Apollo brings a casual grandeur to your living room</p>
 
-    <h4>The Grace</h4>
-    <p><img src="images/bootom/Sofa/Sofa.png"/></p>
-    <h4>The Burton</h4>
-    <p><img src="images/bootom/Sofa/Sofa_1.png"/></p>
-    <h4>The Barrel</h4>
-    <p><img src="images/bootom/Sofa/Sofa_2.png"/></p>
+    <!--------------- slider container ----------------->
+        <div  class="sofas-op-4 width100">
+            <img src="images/img_again/sofa/1.png">
+            <img src="images/img_again/sofa/2.png">
+               <p>Option-1 sofas description .....</p>
+               <p>Option-2 sofas description .....</p>
+        </div>
+        <div class="small-images sofas-op-4-small">
+            <img src="images/img_again/sofa/Sofa_.png">
+             <img src="images/img_again/sofa/Sofa.png">
+        </div>
+<!--------------- slider container End --------------->
     
       <div id="big-image" class="seater-images">
     <img src="images/sofas/1seater.jpg">
@@ -576,12 +697,27 @@ email=	$('#email').val();
   
     <p>Dining tables come in all shapes, sizes, and finishes. You need to find the one that's just perfect! Round dining tables can accommodate more people, while square dining tables are compact and cosy. Rectangular dining tables offer plenty of serving room and suit most spaces. Use our dining table comparator .</p>
     <div class="content-custum">
-    <h4>Luxury  Dining Table</h4>
-    <p><img src="images/Decor/dining.png" alt="Arabia Dining Table"/></p>
-    <h4>Expandable Dining Table</h4>
-    <p><img src="images/Decor/dining2.png" alt="Lucerne 4 to 6 Expandable Dining Table"/></p>
-    <h4>8 seater Dining Table</h4>
-    <p><img src="images/Decor/dining3.png" alt="Lucerne 4 to 6 Expandable Dining Table"/></p>
+   <!--------------- slider container ----------------->
+        <div  class="diningtable-op-1 width100">
+            <img src="images/dining_table/dining.png">
+            <img src="images/dining_table/dining2.png">
+            <img src="images/dining_table/dining3.png">
+            <img src="images/dining_table/dining4.png">
+               <p>Option-1 chairs description .....</p>
+               <p>Option-2 chairs description .....</p>
+               <p>Option-3 chairs description .....</p>
+               <p>Option-4 chairs description .....</p>
+        </div>
+        <div class="small-images diningtable-op-1-small">
+            <img src="images/dining_table/dining-.png">
+            <img src="images/dining_table/dining2-.png">
+             <img src="images/dining_table/dining3-.png">
+             <img src="images/dining_table/dining4-.png">
+        </div>
+<!--------------- slider container End --------------->
+
+   
+   
     </div>
    </div>
   <div data-role="footer" data-theme="a">
@@ -616,18 +752,30 @@ email=	$('#email').val();
   </div>
   <div data-role="content">
     <p>Add a dash of elegance to your kitchen with stylish dining chairs. Go for a teak finish dining chair to pair with a teak finish dining table . Add grace to a glass top with mahogany finish chairs. </p>
-    <h4>Oribi Dining Chairs - Set of 2 
-<span class="small">(Teak Finish, Burnt Orange)</span></h4>
-    <p><img src="images/dining/chairs/1Oribi_Dining_Chairs_0_IMG_8826_Teak_LP.jpg"/></p>
-    <h4>
-Oribi Dining Chairs - Set of 2 
-<span class="small">(Teak Finish, Avocado Green)</span>
+            <!--------------- slider container ----------------->
+        <div  class="6seater width100">
+          <img src="images/dining/chairs/1Oribi_Dining_Chairs_0_IMG_8826_Teak_LP.jpg"/>
+           <img src="images/dining/chairs/2Oribi_Dining_Chairs_0_IMG_8826_Teak_LP.jpg"/>
+           <img src="images/dining/chairs/3Oribi_Dining_Chairs_0_IMG_8826_Teak_LPs.jpg"/>
+               <p>Oribi Dining Chairs - Set of 1 
+<span class="small">(Teak Finish, Avocado Green )</span></p>
+               <p>Oribi Dining Chairs - Set of 2 
+<span class="small">(Teak Finish, Wheat Lite grey)</span>
+</p>
+    <p> Oribi Dining Chairs - Set of 3 
+<span class="small">(Teak Finish, Burnt Orange )</span></p>
 
-</h4>
-    <p><img src="images/dining/chairs/2Oribi_Dining_Chairs_0_IMG_8826_Teak_LP.jpg"/></p>
-    <h4>Oribi Dining Chairs - Set of 2 
-<span class="small">(Teak Finish, Wheat Brown)</h4>
-    <p><img src="images/dining/chairs/3Oribi_Dining_Chairs_0_IMG_8826_Teak_LPs.jpg"/></p>
+        </div>
+        <div class="small-images 6seater-small">
+         <img src="images/circle/green.png">
+           
+            
+               <img src="images/img_again/sofa/Sofa.png">
+                <img src="images/img_again/chair/Chair_3-.png">
+        </div>
+<!--------------- slider container End --------------->
+
+    
   </div>
   <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
@@ -641,15 +789,29 @@ Oribi Dining Chairs - Set of 2
   <div data-role="content">
   
     <p>A stunning dining table set will seamlessly infuse an air of elegance to your dining room . To match your eclectic tastes, a breathtaking array of 6 seater dining table sets are present online. The modish designs and incredible comfort of these tables are bound to leave you enthralled! Explore a wide</p>
-    <h4>Arabia - Oribi 6 Seater Dining Table Set 
-<span class="small">(Teak Finish, Wheat Brown)</span></h4>
-    <p><img src="images/dining/Danton_Folding/Danton_Folding_Dining_Table_Set_Capra_Chairs_Mahogany_Finish_Compare.jpg"/></p>
-    <h4>Arabia - Oribi 6 Seater Dining Table Set 
-<span class="small">(Mahogany Finish, Avocado Green)</span></h4>
-    <p><img src="images/dining/Danton_Folding/Danton_Folding_Dining_Table_Set_MH_Cmp.jpg"/></p>
-    <h4>Arabia - Oribi 6 Seater Dining Table Set 
-<span class="small">(Teak Finish, Wheat grey)</span></h4>
-    <p><img src="images/dining/Danton_Folding/Danton_Folding_Dining_Table_Set_WB_MH_Cmp.jpg"/></p>
+    
+        <!--------------- slider container ----------------->
+        <div  class="6seater width100">
+            <img src="images/dining/Danton_Folding/Danton_Folding_Dining_Table_Set_Capra_Chairs_Mahogany_Finish_Compare.jpg"/>
+            <img src="images/dining/Danton_Folding/Danton_Folding_Dining_Table_Set_MH_Cmp.jpg"/>
+            <img src="images/dining/Danton_Folding/Danton_Folding_Dining_Table_Set_WB_MH_Cmp.jpg"/>
+               <p> Arabia - Oribi 6 Seater Dining Table Set 
+<span class="small">(Teak Finish, Wheat Brown)</span></p>
+               <p>Arabia - Oribi 6 Seater Dining Table Set 
+<span class="small">(Mahogany Finish, Avocado Green)</span></p>
+    <p>  Arabia - Oribi 6 Seater Dining Table Set 
+<span class="small">(Teak Finish, Wheat grey)</span></p>
+
+        </div>
+        <div class="small-images 6seater-small">
+            <img src="images/circle/12.png">
+             <img src="images/circle/green.png">
+               <img src="images/img_again/sofa/Sofa.png">
+        </div>
+<!--------------- slider container End --------------->
+
+    
+    
    </div>
   <div data-role="footer" data-theme="a">
     <h4>Dolcevita Home &copy; 2014</h4>
